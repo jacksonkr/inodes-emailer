@@ -10,7 +10,7 @@ This is a cronjob that sends out an email when inodes hit 80%
 
 **Installation**
 
-`$ git checkout https://github.com/jacksonkr/inodes-emailer`
+`$ git clone https://github.com/jacksonkr/inodes-emailer`
 
 open `$ crontab -e` and add the following
 
