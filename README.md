@@ -10,9 +10,11 @@ This is a cronjob that sends out an email when inodes hit 80%
 
 # Installation
 
+`$ git checkout https://github.com/jacksonkr/inodes-emailer`
+
 open `$ crontab -e` and add the following
 
-`0 0 * * sun /home/user/location/of/inodes-emailer/main.sh`
+`0 0 * * sun /location/of/inodes-emailer/main.sh`
 
 That's all :)
 
@@ -22,10 +24,10 @@ That's all :)
 
 If you get an email, here are some tips on how to troubleshoot further
 
-- to get inode in percentage
+- to list inode info with percentages
 `df -ih`
 
-- to find where majority of inodes are
+- to find folders majority of inodes are
 `find / -xdev -printf '%h\n' | sort | uniq -c | sort -k 1 -n`
 
 - to clean out old php sessions (older then 360 minutes)
