@@ -11,14 +11,20 @@ This is a cronjob that sends out an email when inodes hit 80%
 **Installation**
 
 `$ git clone https://github.com/jacksonkr/inodes-emailer`
+`$ chmod u+x inodes-mailer/main.sh`
 
 open `$ crontab -e` and add the following
 
-`0 0 * * sun /location/of/inodes-emailer/main.sh`
+`0 0 * * 0 bash /location/of/inodes-emailer/main.sh`
 
-That's all :)
+Make sure to open `main.sh` and change the email addres to the desired email
 
+:)
 
+**Troubleshooting**
+
+Q. How can I test that the script is working?
+A. Change `$1>80` to `$1<100` and the script will always trigger the send mail command
 
 **Additional helps**
 
