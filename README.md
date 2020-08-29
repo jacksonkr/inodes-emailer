@@ -1,14 +1,14 @@
 This is a cronjob that sends out an email when inodes hit 80%
 
-# Contents
+**Contents**
 
 - main.sh - this is the script that runs weekly to check inodes and send emails
 
-# Dependencies
+**Dependencies**
 
 - `sudo apt install sendmail` from https://tecadmin.net/install-sendmail-on-ubuntu/
 
-# Installation
+**Installation**
 
 `$ git checkout https://github.com/jacksonkr/inodes-emailer`
 
